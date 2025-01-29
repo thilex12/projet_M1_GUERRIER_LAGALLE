@@ -27,17 +27,17 @@ Connecter sur l'ordinateur la base Kobuki du robot (et les autre capteurs si vou
 A savoir que pour le hokuyo, il doit surement manquer un package à installer (via un sudo apt install) pour le faire fonctionner, à verifier
 Verifier que les EXPORT pour ROS sont en local (pour le roscore)
 
-Lancer le robot (bringup, voir .bashrc)
+##### Lancer le robot (bringup, voir .bashrc)
 $ start_robot
 ou
 $ roslaunch turtlebot_bringup start.launch
 
-Lancer la publication du flux video
+##### Lancer la publication du flux video
 $ cam
 ou
 $ roslaunch ball_detection usb_cam.launch
 
-Lancer le code de detection du volant violet
+##### Lancer le code de detection du volant violet
 $ rosrun ball_detection detector_follow
 (voir .bashrc pour l'alias qui doit etre 'follow' ou 'detect_follow')
 
@@ -47,16 +47,16 @@ $ rosrun ball_detection detector_follow
 
 Le package devrait etre present en local sur le robot et fonctionnel. Il est donc possible de lancer le code sur le robot en ssh
 
-Lancer le robot (bringup, voir .bashrc)
+##### Lancer le robot (bringup, voir .bashrc)
 $ start_robot
 (voir .bashrc si la comande est differente)
 
-Lancer la publication du flux video
+##### Lancer la publication du flux video
 $ cam
 ou
 $ roslaunch ball_detection usb_cam.launch
 
-Lancer le code de detection du volant violet
+##### Lancer le code de detection du volant violet
 $ rosrun ball_detection detector_follow
 (voir .bashrc pour l'alias qui doit etre 'follow' ou 'detect_follow')
 
