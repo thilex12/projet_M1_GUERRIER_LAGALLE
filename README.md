@@ -53,11 +53,14 @@ $ start_robot
 
 ##### Lancer la publication du flux video
 $ cam
+
 ou
+
 $ roslaunch ball_detection usb_cam.launch
 
 ##### Lancer le code de detection du volant violet
 $ rosrun ball_detection detector_follow
+
 (voir .bashrc pour l'alias qui doit etre 'follow' ou 'detect_follow')
 
 
@@ -69,16 +72,16 @@ $ rosrun ball_detection detector_follow
 
 Le programme pour A*
 
-Lancer un roscore
+##### Lancer un roscore
 $ roscore
 
-Lancer rviz
+##### Lancer rviz
 $ rviz
 
-Charger une carte sur rviz
+##### Charger une carte sur rviz
 $rosrun map_server map_server {map path}
 
-Lancer le code de A*
+##### Lancer le code de A*
 $ rosrun ball_detection a_etoile
 
 
