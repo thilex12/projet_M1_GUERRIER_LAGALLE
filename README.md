@@ -28,13 +28,13 @@ A savoir que pour le hokuyo, il doit surement manquer un package à installer (v
 Verifier que les EXPORT pour ROS sont en local (pour le roscore)
 
 ##### Lancer le robot (bringup, voir .bashrc)
-$ start_robot
-ou
+$ start_robot\n
+ou\n
 $ roslaunch turtlebot_bringup start.launch
 
 ##### Lancer la publication du flux video
-$ cam
-ou
+$ cam\n
+ou\n
 $ roslaunch ball_detection usb_cam.launch
 
 ##### Lancer le code de detection du volant violet
@@ -52,15 +52,12 @@ $ start_robot
 (voir .bashrc si la comande est differente)
 
 ##### Lancer la publication du flux video
-$ cam
-
-ou
-
+$ cam\n
+ou\n
 $ roslaunch ball_detection usb_cam.launch
 
 ##### Lancer le code de detection du volant violet
-$ rosrun ball_detection detector_follow
-
+$ rosrun ball_detection detector_follow\n
 (voir .bashrc pour l'alias qui doit etre 'follow' ou 'detect_follow')
 
 
